@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dr. Wilter C. Morales-García | Psicometría · UPeU</title>
-<meta name="description" content="Perfil académico del Dr. Wilter C. Morales-García — 105 publicaciones Scopus. Especialista en psicometría, validación, SEM y meta-análisis. Universidad Peruana Unión, Lima, Perú.">
+<title>Dr. Wilter C. Morales-García | Psicometía · UPeU</title>
+<meta name="description" content="Perfil académico del Dr. Wilter C. Morales-García — 105 publicaciones Scopus. Especialista en psicometía, validación, SEM y meta-análisis. Universidad Peruana Unión, Lima, Perú.">
 <meta name="author" content="Wilter C. Morales-García">
 <meta property="og:title" content="Dr. Wilter C. Morales-García | Investigador">
 <meta property="og:description" content="105 publicaciones Scopus · 2290 citas · h-index 22 · UPeU, Perú.">
@@ -35,26 +35,28 @@ a{color:inherit;text-decoration:none} .wrap{max-width:1180px;margin:auto;padding
 /* Typography */
 h1,h2,.brand{font-family:'Playfair Display',Georgia,serif}
 body{font-family:'DM Sans',system-ui,sans-serif}
-/* Entrance animations */
+/* Entrance animation */
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .hero>div{animation:fadeUp .7s ease both}
 .hero>aside{animation:fadeUp .7s .18s ease both}
-/* Scroll reveal - only for small elements, NOT full sections */
-.anim-reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+/* Scroll reveal - ONLY for cards, never full sections */
+.anim-reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
 .anim-reveal.vis{opacity:1;transform:translateY(0)}
 /* Card hover */
 .pub{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 .pub:hover{transform:translateY(-5px);box-shadow:0 12px 36px rgba(0,0,0,.5);border-color:rgba(243,212,122,.6)}
 .pub a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:22px}
-/* Metric counter animation */
+/* Metric counter */
 @keyframes popIn{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
 .metric.vis strong{animation:popIn .45s ease both}
-/* Skill icons */
-.skill .ico{font-size:2.1rem;margin-bottom:6px;display:block}
+/* Emoji icons — explicit emoji font stack so they always render */
+.skill .ico{font-size:2.2rem;margin-bottom:6px;display:block;
+  font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji","Twemoji Mozilla",sans-serif}
+.dock b{font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
 /* Category filter */
 .cat{transition:background .2s ease}
 .cat:hover:not(.active){background:rgba(255,255,255,.13)}
-/* GScholar metrics row */
+/* Google Scholar metrics */
 .gscholar-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
 .gs-metric{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center}
 .gs-metric strong{display:block;font-size:1.8rem;color:var(--gold);line-height:1;font-weight:900}
@@ -65,7 +67,6 @@ footer strong{color:var(--gold)}
 footer a{color:var(--gold);text-decoration:none}
 footer a:hover{text-decoration:underline}
 .foot-links{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 18px;margin-top:4px}
-@media(max-width:560px){.gscholar-row{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
@@ -75,7 +76,7 @@ footer a:hover{text-decoration:underline}
 <section class="hero">
 <div>
 <h1>Wilter C. <span>Morales-García</span></h1>
-<p class="lead">Investigador en psicometría, salud mental, salud pública, educación, bienestar ocupacional e inteligencia artificial. Especialista en validación de instrumentos, SEM, regresiones, meta-análisis y análisis de redes.</p>
+<p class="lead">Pastor de la IASD, investigador en psicometría, salud mental, salud pública, educación, bienestar ocupacional e inteligencia artificial. Especialista en validación de instrumentos, SEM, regresiones, meta-análisis y análisis de redes.</p>
 <div class="actions"><a class="btn primary" href="#contacto">Contactar</a><a class="btn wsp" href="https://wa.me/51949866544" target="_blank">WhatsApp</a><a class="btn" href="#produccion">Artículos</a></div>
 </div>
 <aside class="profile">
@@ -89,7 +90,7 @@ footer a:hover{text-decoration:underline}
 <section class="grid3">
 <div class="metric"><strong>105</strong><small>Documentos en Scopus</small></div>
 <div class="metric"><strong>7</strong><small>Años con producción</small></div>
-<div class="metric"><strong>105</strong><small>Artículos enlazados</small></div>
+<div class="metric"><strong>111</strong><small>Artículos enlazados</small></div>
 </section>
 
 <section id="contacto" class="section">
@@ -103,31 +104,89 @@ footer a:hover{text-decoration:underline}
 <section id="expertise" class="section">
 <h2>Expertise <span>metodológica</span></h2><p class="muted">Enfoque amplio en métodos cuantitativos aplicados a salud, educación y psicología.</p>
 <div class="skills">
-<div class="skill"><div class="ico">ð</div><h3>Validación</h3><p>AFE, AFC, confiabilidad, validez e invarianza.</p></div>
-<div class="skill"><div class="ico">ð</div><h3>SEM y mediación</h3><p>Modelos estructurales, rutas y variables latentes.</p></div>
-<div class="skill"><div class="ico">ð</div><h3>Regresiones</h3><p>Modelos lineales, logísticos y predictivos.</p></div>
-<div class="skill"><div class="ico">ð§©</div><h3>Meta-análisis</h3><p>PRISMA, efectos agrupados y heterogeneidad.</p></div>
-<div class="skill"><div class="ico">ð¸ï¸</div><h3>Redes</h3><p>Centralidad, comunidades y comparación de redes.</p></div>
-<div class="skill"><div class="ico">ð¤</div><h3>IA aplicada</h3><p>Dependencia, autoeficacia y actitudes hacia IA.</p></div>
+<div class="skill"><div class="ico">📊</div><h3>Validación</h3><p>AFE, AFC, confiabilidad, validez e invarianza.</p></div>
+<div class="skill"><div class="ico">🔗</div><h3>SEM y mediación</h3><p>Modelos estructurales, rutas y variables latentes.</p></div>
+<div class="skill"><div class="ico">📈</div><h3>Regresiones</h3><p>Modelos lineales, logísticos y predictivos.</p></div>
+<div class="skill"><div class="ico">🔬</div><h3>Meta-análisis</h3><p>PRISMA, efectos agrupados y heterogeneidad.</p></div>
+<div class="skill"><div class="ico">🕸️</div><h3>Redes</h3><p>Centralidad, comunidades y comparación de redes.</p></div>
+<div class="skill"><div class="ico">🤖</div><h3>IA aplicada</h3><p>Dependencia, autoeficacia y actitudes hacia IA.</p></div>
 </div>
 </section>
 
 <section id="scopus" class="section">
 <h2>Producción <span>Scopus</span></h2><p class="muted">Vista simple por año. No se muestran citaciones.</p>
 <div class="scopus"><div class="panel"><div class="big">105</div><h3>Documentos en Scopus</h3><p>Perfil Morales-García, Wilter C. · Universidad Peruana Unión.</p><div class="actions"><a class="btn primary" href="https://www.scopus.com/authid/detail.uri?authorId=57218322803" target="_blank">Abrir Scopus</a></div></div>
-<div class="panel bars">
-<div class="bar"><span>2026</span><i style="width:26%"></i><b>9</b></div><div class="bar"><span>2025</span><i style="width:37%"></i><b>13</b></div><div class="bar"><span>2024</span><i style="width:91%"></i><b>32</b></div><div class="bar"><span>2023</span><i style="width:100%"></i><b>35</b></div><div class="bar"><span>2022</span><i style="width:40%"></i><b>14</b></div><div class="bar"><span>2021</span><i style="width:5%"></i><b>1</b></div><div class="bar"><span>2020</span><i style="width:5%"></i><b>1</b></div>
-</div></div>
+<div class="panel bars"><div class="bar"><span>2026</span><i style="width:22%"></i><b>9</b></div><div class="bar"><span>2025</span><i style="width:32%"></i><b>13</b></div><div class="bar"><span>2024</span><i style="width:82%"></i><b>33</b></div><div class="bar"><span>2023</span><i style="width:100%"></i><b>40</b></div><div class="bar"><span>2022</span><i style="width:35%"></i><b>14</b></div><div class="bar"><span>2021</span><i style="width:2%"></i><b>1</b></div><div class="bar"><span>2020</span><i style="width:2%"></i><b>1</b></div></div></div>
 
-<section class="section" style="padding-top:0"><h2>Métricas <span>Google Scholar</span></h2><p class="muted">Actualizado mayo 2026 · <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener" style="color:var(--gold)">Ver perfil</a></p><div class="gscholar-row"><div class="gs-metric anim-reveal"><strong>2290</strong><small>Citas totales</small></div><div class="gs-metric anim-reveal"><strong>22</strong><small>Índice h</small></div><div class="gs-metric anim-reveal"><strong>44</strong><small>Índice i10</small></div></div></section>
+<section class="section" style="padding-top:0"><h2>Métricas <span>Google Scholar</span></h2><p class="muted">Actualizado mayo 2026</p><div class="gscholar-row"><div class="gs-metric anim-reveal"><strong>2290</strong><small>Citas totales</small></div><div class="gs-metric anim-reveal"><strong>22</strong><small>Índice h</small></div><div class="gs-metric anim-reveal"><strong>44</strong><small>Índice i10</small></div></div></section>
 <section id="produccion" class="section">
 <h2>Producción <span>científica</span></h2><p class="muted">Toca una categoría o busca por título, revista, autor o DOI.</p>
 <div class="filter">
-<div class="catgrid"><button type="button" class="cat active" data-category="Todos">Todos <b>105</b></button><button type="button" class="cat " data-category="Validación">Validación <b>34</b></button><button type="button" class="cat " data-category="SEM y mediación">SEM y mediación <b>23</b></button><button type="button" class="cat " data-category="Regresiones">Regresiones <b>10</b></button><button type="button" class="cat " data-category="Meta-análisis">Meta-análisis <b>1</b></button><button type="button" class="cat " data-category="Análisis de redes">Análisis de redes <b>0</b></button><button type="button" class="cat " data-category="IA aplicada">IA aplicada <b>1</b></button><button type="button" class="cat " data-category="Salud mental">Salud mental <b>11</b></button><button type="button" class="cat " data-category="Salud pública">Salud pública <b>5</b></button><button type="button" class="cat " data-category="Otros">Otros <b>20</b></button></div>
-<div class="searchrow"><input id="searchInput" type="search" autocomplete="off" placeholder="Buscar: validación, burnout, IA, DOI..."><select id="yearFilter"><option value="">Todos los años</option><option value="2026">2026 (9)</option><option value="2025">2025 (13)</option><option value="2024">2024 (32)</option><option value="2023">2023 (35)</option><option value="2022">2022 (14)</option><option value="2021">2021 (1)</option><option value="2020">2020 (1)</option></select></div>
+<div class="catgrid"><button type="button" class="cat active" data-category="Todos">Todos <b>111</b></button><button type="button" class="cat " data-category="Validación">Validación <b>34</b></button><button type="button" class="cat " data-category="SEM y mediación">SEM y mediación <b>23</b></button><button type="button" class="cat " data-category="Regresiones">Regresiones <b>10</b></button><button type="button" class="cat " data-category="Meta-análisis">Meta-análisis <b>1</b></button><button type="button" class="cat " data-category="Análisis de redes">Análisis de redes <b>0</b></button><button type="button" class="cat " data-category="IA aplicada">IA aplicada <b>1</b></button><button type="button" class="cat " data-category="Salud mental">Salud mental <b>11</b></button><button type="button" class="cat " data-category="Salud pública">Salud pública <b>5</b></button><button type="button" class="cat " data-category="Otros">Otros <b>20</b></button></div>
+<div class="searchrow"><input id="searchInput" type="search" autocomplete="off" placeholder="Buscar: validación, burnout, IA, DOI..."><select id="yearFilter"><option value="">Todos los años</option><option value="2026">2026 (9)</option><option value="2025">2025 (13)</option><option value="2024">2024 (33)</option><option value="2023">2023 (40)</option><option value="2022">2022 (14)</option><option value="2021">2021 (1)</option><option value="2020">2020 (1)</option></select></div>
 </div>
 <div id="empty" class="empty">No se encontraron artículos con estos filtros.</div>
 <div class="publist">
+    <article class="pub" data-category="Regresiones" data-year="2024" data-text="digital competencies and transformational leadership as predictors of job performance in university teachers  journal of educators online 10.9743/jeo.2024.21.3.18">
+      <a href="https://doi.org/10.9743/jeo.2024.21.3.18" target="_blank" rel="noopener">
+        <div class="publine"><b>#106</b><span>Regresiones</span></div>
+        <h3>DIGITAL COMPETENCIES AND TRANSFORMATIONAL LEADERSHIP AS PREDICTORS OF JOB PERFORMANCE IN UNIVERSITY TEACHERS</h3>
+        <p></p>
+        <small>Journal of Educators Online · 2024 · Article</small>
+        <small>DOI: 10.9743/jeo.2024.21.3.18</small>
+        <strong>Abrir documento →</strong>
+      </a>
+    </article>
+    <article class="pub" data-category="Salud mental" data-year="2023" data-text="dietary intake, stress, anxiety, and satisfaction with nutrition services in patients with and without covid-19  journal of multidisciplinary healthcare 10.2147/jmdh.s399978">
+      <a href="https://doi.org/10.2147/jmdh.s399978" target="_blank" rel="noopener">
+        <div class="publine"><b>#107</b><span>Salud mental</span></div>
+        <h3>Dietary Intake, Stress, Anxiety, and Satisfaction with Nutrition Services in Patients with and without COVID-19</h3>
+        <p></p>
+        <small>Journal of Multidisciplinary Healthcare · 2023 · Article</small>
+        <small>DOI: 10.2147/jmdh.s399978</small>
+        <strong>Abrir documento →</strong>
+      </a>
+    </article>
+    <article class="pub" data-category="Otros" data-year="2023" data-text="relationship between sleep quality, eating habits, and anthropometric profile in adolescents: a cross-sectional survey  retos 10.47197/retos.v48.96283">
+      <a href="https://doi.org/10.47197/retos.v48.96283" target="_blank" rel="noopener">
+        <div class="publine"><b>#108</b><span>Otros</span></div>
+        <h3>Relationship between sleep quality, eating habits, and anthropometric profile in adolescents: A cross-sectional survey</h3>
+        <p></p>
+        <small>Retos · 2023 · Article</small>
+        <small>DOI: 10.47197/retos.v48.96283</small>
+        <strong>Abrir documento →</strong>
+      </a>
+    </article>
+    <article class="pub" data-category="Salud mental" data-year="2023" data-text="healthy habits factors and stress associated with health-related quality of life in a peruvian adult population: a cross-sectional study  journal of multidisciplinary healthcare 10.2147/jmdh.s412962">
+      <a href="https://doi.org/10.2147/jmdh.s412962" target="_blank" rel="noopener">
+        <div class="publine"><b>#109</b><span>Salud mental</span></div>
+        <h3>Healthy Habits Factors and Stress Associated with Health-Related Quality of Life in a Peruvian Adult Population: A Cross-Sectional Study</h3>
+        <p></p>
+        <small>Journal of Multidisciplinary Healthcare · 2023 · Article</small>
+        <small>DOI: 10.2147/jmdh.s412962</small>
+        <strong>Abrir documento →</strong>
+      </a>
+    </article>
+    <article class="pub" data-category="SEM y mediación" data-year="2023" data-text="social support, quality of care, and patient adherence to tuberculosis treatment in peru: the mediating role of nurse health education  patient preference and adherence 10.2147/ppa.s391930">
+      <a href="https://doi.org/10.2147/ppa.s391930" target="_blank" rel="noopener">
+        <div class="publine"><b>#110</b><span>SEM y mediación</span></div>
+        <h3>Social Support, Quality of Care, and Patient Adherence to Tuberculosis Treatment in Peru: The Mediating Role of Nurse Health Education</h3>
+        <p></p>
+        <small>Patient Preference and Adherence · 2023 · Article</small>
+        <small>DOI: 10.2147/ppa.s391930</small>
+        <strong>Abrir documento →</strong>
+      </a>
+    </article>
+    <article class="pub" data-category="Salud mental" data-year="2023" data-text="physical inactivity is associated with job burnout in health professionals during the covid-19 pandemic  risk management and healthcare policy 10.2147/rmhp.s393311">
+      <a href="https://doi.org/10.2147/rmhp.s393311" target="_blank" rel="noopener">
+        <div class="publine"><b>#111</b><span>Salud mental</span></div>
+        <h3>Physical Inactivity is Associated with Job Burnout in Health Professionals During the COVID-19 Pandemic</h3>
+        <p></p>
+        <small>Risk Management and Healthcare Policy · 2023 · Article</small>
+        <small>DOI: 10.2147/rmhp.s393311</small>
+        <strong>Abrir documento →</strong>
+      </a>
+    </article>
     <article class="pub" data-category="SEM y mediación" data-year="2026" data-text="burnout as a predictor of job satisfaction in peruvian nurses: the mediating role of work engagement escalante-zúñiga i.j.; pérez-flores e.; cabanillas-chávez m.t.; sairitupa-sanchez l.z.; morales-garcía s.b.; rivera-lozada o.; morales-garcía w.c. nursing reports 10.3390/nursrep16020063">
       <a href="https://doi.org/10.3390/nursrep16020063" target="_blank" rel="noopener">
         <div class="publine"><b>#001</b><span>SEM y mediación</span></div>
@@ -1194,7 +1253,7 @@ footer a:hover{text-decoration:underline}
 </footer>
 
 <script>
-// Scroll reveal for small elements only
+// Scroll reveal (cards only, never full sections)
 (function(){
   var ro=new IntersectionObserver(function(e){
     e.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add("vis");ro.unobserve(entry.target);}});
