@@ -1,4 +1,4 @@
- """
+"""
 update_pubs.py — Actualiza publicaciones en index.html usando la API de Scopus.
 
 La API key se lee desde la variable de entorno SCOPUS_API_KEY.
